@@ -11,7 +11,21 @@ body {
     font-family: 'Abel', sans-serif;
     margin: 0;
   }
+
+  .verticalLine{
+    border-left: 6px solid green;
+    height: 100px;
+  }
   
+.title{
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+.divPadding{
+  margin-bottom: 30px;
+}
   /* Header/logo Title */
 header {
     padding: 20px;
