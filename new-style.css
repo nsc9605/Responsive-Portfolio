@@ -1,3 +1,4 @@
+/* variable function for repeated use */
 :root {
   --white: #ffffff;
   --seagreen: lightseagreen;
@@ -6,7 +7,8 @@
 * {
     box-sizing: border-box;
   }
-  
+
+/* formats for each header section */
 h1 {
   float: left;
   font-size: 50px;
@@ -24,11 +26,14 @@ body {
     padding: 0;
   }
 
+/* rules for the vertical line for each section */
 .verticalLine{
   border-left: 7px solid teal;
-  height: 100px;
+  height: 150px;
+  margin-top: 20px;
 }
-  
+
+/* Controling size and format for the h1 titles */
 .title{
   font-size: 50px;
   font-weight: bold;
@@ -37,22 +42,30 @@ body {
   padding: 10px;
 }
 
+/* only rules for the image */
 .col-3 img {
   align-items: left; 
-  padding: 0px;
-  max-height: 333px;
-  max-width: 333px; 
-  margin-right: 50%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  max-height: 250px;
+  max-width: 250px; 
+  margin-right: 75%;
 }
 
+/* overall justifications for column-9 */
 .col-9 {
   top: 10px;
+  padding: 0px;
 }
 
+/* overall column-12 justifications */
 .col-12 {
   justify-content: center;
   margin-left: 9%;
 }
+
+/* format for image box in column-12 */
 .col-12 img {
   border-color: var(--seagreen);
   border-style: solid;
@@ -62,11 +75,14 @@ body {
   min-width: 656px;
   min-height: 328px;
 }
+
+
 .col-6 {
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
+/* Properties for the photos in the boxes in "Work" section */
 .col-6 img {
   border-color: var(--seagreen);
   border-style: solid;
@@ -74,14 +90,17 @@ body {
   max-height: 225px;
   min-width: 400px;
   min-height: 225px;
+  flex: 0 0 0;
 }
 
+/* Padding per each div column */
 .divPadding{
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-top: 35px;
   margin-left: 0;
 }
 
+/* to place the item on the image as in text */
 .item > img {
   width: 100%;
   height: auto;
@@ -89,6 +108,7 @@ body {
   position: relative;
   
 }
+
 .label { /* Adding the text to be placed on the photo in work boxes*/
   font-size: 1rem;
   line-height: 3;
@@ -115,6 +135,7 @@ nav a:hover {
     .row, .navbar, col {   
       flex-direction: row;
     }
+
 @media only screen and (max-width:800px) {
       /* For tablets: */
       .main {
@@ -131,13 +152,11 @@ nav a:hover {
       .menu, .main, .right {
         width: 100%;
     }
-
+/* Footer element formatting */
   footer {
     padding: 20px;
     text-align: center;
     font-family: 'Abel', sans-serif;
     font-size: 20px;
     position: fixed;
-    bottom: 0px;
-    left: 0px;
   }
