@@ -21,7 +21,8 @@ https://nsc9605.github.io/Responsive-Portfolio/
 
 ## Demo Screenshot
 
-![Responsive-Portfolio](Portfolio-Demo-Screenshot.png)
+![Responsive-Portfolio-Demo](Portfolio-Demo-Screenshot.png)
+
 
 ## License
 
