@@ -6,4 +6,25 @@ This is a professional portfolio of the web developer's background information, 
 
 When the user clicks on the link abut their work, it scrolls to the section with titled images of the developers applications, which are linked to their work which will deploy live when clicked. This page has a responsive layout that adapts to different viewports--allowing it to be used on different device layouts/screen sizes.
 
-While some of the photos in the "Work" section do not have links to deploy, they will be added later as more applications are created throughout the semester and well after. Developer provides links to deploy their own websites for contacting them i.e.; when you click on the email it brings up whatever mail provider a user has and a brand new email to fill out. When click on GitLab it deploys their personal account with all repositories, and when clicking LinkedIn it brings up their personal LinkedIn page. 
+While some of the photos in the "Work" section do not have links to deploy, they will be added later as more applications are created throughout the semester and well after. Developer provides links to deploy their own websites for contacting them i.e.; when you click on the email it brings up whatever mail provider a user has and a brand new email to fill out. When click on GitLab it deploys their personal account with all repositories, and when clicking LinkedIn it brings up their personal LinkedIn page.
+
+
+## Tech/Framework Used
+
+VS Code
+
+
+## Installation
+
+
+
+
+## Demo Screenshot
+
+![Responsive-Portfolio](Portfolio-Demo-Scrreenshot.png)
+
+
+## License
+
+© 2020 Nicole Catapano 
+

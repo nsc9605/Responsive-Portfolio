@@ -126,6 +126,10 @@ nav a:hover {
     
   }
 
+.col-6 img:hover {
+  background-color: peachpuff;
+}
+
 .col- {
   width: 100%;
 }
