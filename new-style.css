@@ -7,6 +7,15 @@
     box-sizing: border-box;
   }
   
+h1 {
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  color: teal;
+  float: right;
+  padding: 10px;
+}
+
 
 /* Style the body */
 body {
@@ -27,6 +36,15 @@ body {
   float: right;
   padding: 10px;
 }
+
+.col-3 img {
+  align-items: left; 
+  padding: 0px;
+  max-height: 333px;
+  max-width: 333px; 
+  margin-right: 50%;
+}
+
 .col-9 {
   top: 10px;
 }
@@ -52,9 +70,10 @@ body {
 .col-6 img {
   border-color: var(--seagreen);
   border-style: solid;
-
   max-width: 400px;
   max-height: 225px;
+  min-width: 400px;
+  min-height: 225px;
 }
 
 .divPadding{
