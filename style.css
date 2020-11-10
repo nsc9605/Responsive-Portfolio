@@ -136,8 +136,9 @@ nav a:hover {
 
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-    .row, .navbar, col {   
+    .row, .navbar, .col-3 {   
       flex-direction: row;
+      flex-wrap: wrap;
     }
 
 @media only screen and (max-width:800px) {
@@ -156,6 +157,13 @@ nav a:hover {
       .menu, .main, .right {
         width: 100%;
     }
+      .col-3 {
+        width: 30%;
+      }
+      .col-9 {
+        width: 70%;
+      }
+      
 /* Footer element formatting */
   footer {
     padding: 20px;
