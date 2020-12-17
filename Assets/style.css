@@ -1,0 +1,279 @@
+/* variable function for repeated use */
+:root {
+  --white: #ffffff;
+  --peachpuff: rgba(235, 143, 104, 0.913);
+  --teal: teal;
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+  }
+
+/* .header-nav { */
+
+
+/* formats for each header section */
+h1 {
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--teal);
+  padding: 10px;
+}
+
+.name {
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--teal);
+  padding: 10px;
+}
+/* Style the body */
+body {
+
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/images/bg-design.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+  }
+
+/* rules for the vertical line for each section */
+.verticalLine{
+  border-left: 7px solid var(--teal);
+  height: 242px;
+  margin-top: 20px;
+}
+
+.verticalLine-work{
+  border-left: 7px solid var(--teal);
+  height: 95%;
+  margin-top: 20px;
+}
+
+.verticalLine-contact {
+  border-left: 7px solid var(--teal);
+  height: 130px;
+  margin-top: 20px;
+}
+
+.row {
+  padding-top: 10px;
+  display: flex;
+  flex: wrap;
+} 
+
+/* Controlling size and format for the h1 titles */
+.title{
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--teal);
+  float: right;
+  padding: 10px;
+}
+
+
+.col-3 {
+  float: left;
+  flex: wrap;
+}
+
+/* only rules for the image */
+.col-3 img {
+  justify-content: left; 
+  margin-top: 10px;
+  padding-top: -30px;
+  /* background-image: url("../assets/images/meImg.jpg"); */
+  /* margin-bottom: 40px; */
+  padding-bottom: 10px;
+  max-height: 250px;
+  max-width: 250px; 
+  margin-right: 75%;
+}
+
+/* overall justifications for column-9 */
+.col-9 {
+  top: 10px;
+  padding: 10px;
+  /* justify-content: space-between; */
+  
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 5px;
+  justify-content: space-around;
+  width: 800px;
+  margin-right: 100px;
+  font-size: 30px;
+ 
+  
+}
+/* overall column-12 justifications */
+.col-12 {
+  justify-content: center;
+  margin-left: 9%;
+}
+
+/* format for image box in column-12 */
+.col-12 img {
+  border-color: var(--seagreen);
+  border-style: solid;
+  align-items: center;
+  max-width: 656px;
+  max-height: 328px;
+  min-width: 656px;
+  min-height: 328px;
+}
+
+.meImg{
+  height: 200px;
+  width: 200px;
+  /* border-radius: 50px; */
+  background-image: url(../assets/images/meImg.jpg);
+  /* margin-top: 25px; */
+  margin-right: 50px;
+  padding-top: -120%;
+}
+
+.col-6 {
+  justify-content: space-around;
+  position: relative;
+  flex-wrap: wrap;
+  flex: auto;
+}
+
+/* Properties for the photos in the boxes in "Work" section */
+.col-6 img {
+  border-color: rgb(43, 172, 142);
+  border-style: solid;
+  max-width: 400px;
+  max-height: 225px;
+  min-width: 400px;
+  min-height: 225px;
+  flex: 0 0 0;
+}
+
+/* Padding per each div column */
+.divPadding{
+  margin-bottom: 35px;
+  margin-top: 40px;
+  margin-left: 0;
+  padding-top: 20px;
+}
+
+
+/* to place the item on the image as in text */
+.item > img {
+  width: 100%;
+  height: auto;
+  display: block; /* to get rid of whitespace */
+  position: relative;
+  justify-content: space-between;
+  
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  /* margin-top: 35px; */
+  justify-content: left;
+  opacity: .78;
+  margin-left: -16px;
+  /* align-self: stretch; */
+}
+
+.label { /* Adding the text to be placed on the photo in work boxes*/
+  font-size: 1rem;
+  line-height: 3;
+  padding: 0 1rem;
+  position: absolute;
+  bottom: -10px;
+  left: 25px;
+  background-color: var(--teal);
+  color: var(--white);  
+}
+
+a {
+  color: var(--teal);
+}
+
+.links:hover {
+  border-bottom: 3px solid var(--peachpuff);
+  /* font-size: 25px; */
+}
+
+/* Change color on hover */
+.nav-item:hover {
+    border-bottom: 3px solid var(--peachpuff);
+    /* font-size: 25px; */
+  }
+
+.navbar-nav {
+  display: flex;
+  flex: wrap;
+  width: 100vh;
+  /* margin-right: 100px; */
+  font-size: 30px;
+  float: inline-end;
+  position: static;
+}
+
+.col- {
+  width: 100%;
+}
+
+/* Footer element formatting */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  position: sticky; /* Added to keep footer at bottom of page */
+}
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar, .col-3, .col-9, .col-6 {   
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+@media only screen and (max-width:800px) {
+      /* For tablets: */
+      .main {
+        width: 80%;
+        padding: 0;
+      }
+      .right {
+        width: 100%;
+      }
+    }
+
+@media only screen and (max-width:500px) {
+      /* For mobile phones: */
+      .container, .body, .right, .navbar-nav {
+        width: 100%;
+      }
+      .col-3 {
+        width: 30%;
+      }
+      .col-9 {
+        width: 70%;
+      }
+    }
+}    
+
+
+ /* Generate the small columns */
+.make-sm-column {
+  position: relative;
+  /* Prevent columns from collapsing when empty */
+  min-height: 1px;
+}
