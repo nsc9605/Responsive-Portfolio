@@ -46,7 +46,7 @@ body {
 /* rules for the vertical line for each section */
 .verticalLine {
   border-left: 7px solid var(--teal);
-  height: 242px;
+  height: 270px;
   margin-top: 20px;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .verticalLine-contact {
   border-left: 7px solid var(--teal);
-  height: 130px;
+  height: 150px;
   margin-top: 20px;
 }
 
@@ -144,6 +144,10 @@ body {
   min-width: 400px;
   min-height: 225px;
   flex: 0 0 0;
+}
+
+p {
+  font-size: 25px;
 }
 
 /* Padding per each div column */
