@@ -21,7 +21,7 @@ VS Code
 
 ## Demo Screenshot
 
-![Responsive-Portfolio-Demo](/Assets/images/demoshot.png)
+![Responsive-Portfolio-Demo](Assets/images/demoshot.png)
 
 
 ## License
