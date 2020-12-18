@@ -34,13 +34,13 @@ h1 {
 /* Style the body */
 body {
 
-  background-image: url(../assets/images/bg-design.jpeg);
+  background-image: url(../Assets/images/bg-design.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
-  background
-  width: 100vh;
+  /* background */
+  /* width: 100vh; */
 }
 
 /* rules for the vertical line for each section */
@@ -216,8 +216,9 @@ a {
 
 /* Footer element formatting */
 footer {
+  color: var(--black);
   text-align: center;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   font-size: 30px;
   position: sticky; /* Added to keep footer at bottom of page */
 }
