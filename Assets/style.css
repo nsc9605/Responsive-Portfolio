@@ -1,3 +1,9 @@
+/* Styled for every section of the page */
+* {
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+}
+
 /* variable function for repeated use */
 :root {
   --white: #ffffff;
@@ -5,13 +11,9 @@
   --teal: teal;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Abel", sans-serif;
-}
 
 header {
-  width: 100vh;
+  width: 100%;
 }
 /* formats for each header section */
 h1 {
@@ -31,12 +33,13 @@ h1 {
 }
 /* Style the body */
 body {
-  margin: 0;
+
   background-image: url(../assets/images/bg-design.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
+  background
   width: 100vh;
 }
 
@@ -203,13 +206,13 @@ a {
   width: 100%;
   opacity: 0.78;
   font-size: 30px;
-  align-items: right;
+  float: right;
   position: sticky;
 }
 
-.col- {
+/* .col- {
   width: 100%;
-}
+} */
 
 /* Footer element formatting */
 footer {

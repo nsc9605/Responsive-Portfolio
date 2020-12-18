@@ -16,12 +16,12 @@ VS Code
 
 ## Installation
 
-https://nsc9605.github.io/Responsive-Portfolio/
+![Click here to deploy application!](https://nsc9605.github.io/Responsive-Portfolio/)
 
 
 ## Demo Screenshot
 
-![Responsive-Portfolio-Demo](assets/images/demoshot.png)
+![Responsive-Portfolio-Demo](/assets/images/demoshot.png)
 
 
 ## License
