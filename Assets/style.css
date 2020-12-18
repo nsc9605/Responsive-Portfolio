@@ -34,7 +34,7 @@ h1 {
 /* Style the body */
 body {
 
-  background-image: url(../Assets/images/bg-design.jpeg);
+  background-image: url(./images/bg-design.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
