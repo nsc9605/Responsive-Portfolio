@@ -3,13 +3,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Shadows Into Light', cursive;
+  /* font-family: "Shadows Into Light", cursive; */
+  font-family: "Chau Philomene One", sans-serif;
   text-decoration: none;
 }
 
 body {
+  /* background-color: rgb(255, 255, 255); */
   /* font-family: monospace; */
-  background: url(/assets/images/bg-design.jpeg) no-repeat center center fixed;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gnZdI1pq_n5XC2wSg0L9YwdqVDWeujxFDA&usqp=CAU)no-repeat center center fixed; */
+  background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/11/15-Presentation-Background-Examples12.jpeg)
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,29 +21,37 @@ body {
 }
 .main-container {
   display: grid;
-  grid-template-rows: .5fr 4fr .5fr;
+  grid-template-rows: 0.5fr 4fr 0.5fr;
   /* grid-template-columns: 2fr 4fr; */
   grid-gap: 30px;
 }
 
 header {
   width: 100%;
-  /* height: 100vh; */
+  height: 40vh;
+  padding: 20px;
+  background-image: url(/assets/images/self.jpeg);
+  background-size: contain;
 }
 
 .top-nav {
   width: 100%;
   position: fixed;
-  color: rgb(175, 122, 235); 
+  color: rgb(175, 122, 235);
   /* border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%; */
-  transition: all 650ms cubic-bezier(1,0,0,1);
+  transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  font-family: "Chau Philomene One", sans-serif;
 }
 
+h1,
 h2 {
   padding: 10px;
-  font-size: 60px;
-  text-shadow: 1px 1px 2px;
+  font-size: 70px;
+  color: rgb(240, 206, 170);
+  text-shadow: 4px 4px 4px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
+    -1px -1px 1px #000;
+  font-family: "Chau Philomene One", sans-serif;
 }
 
 .details {
@@ -70,35 +82,55 @@ h2 {
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-gap: 10px;
   justify-content: space-evenly;
 }
 
 .nav-list {
   list-style: none;
   width: 100%;
-  /* height: 100%; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-family: "Chau Philomene One", sans-serif;
 }
 
 li {
   margin: 0 2rem;
 }
 
-.nav-link {
-  font-family: sans-serif;
+ul li a {
+  transition: all 0.3s ease 0s;
   font-size: 30px;
-  padding: 1rem;
+  color: #9f96d3;
+  color: rgb(240, 206, 170);
+  text-shadow: 4px 4px 4px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
+    -1px -1px 1px #000;
+  margin-left: 10px;
+  padding: 0 10px;
+  font-family: "Chau Philomene One", sans-serif;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  background: linear-gradient(to top, #ffe838, #915178);
-  --webkit-background-clip: text;
-  --webkit-text-fill-color: transparent;
+li:hover,
+li:focus {
+  color: rgb(67, 206, 141);
+  border-color: rgb(17, 53, 37);
+  border-style: solid;
+  /* border-bottom: 1px solid; */
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+  font-family: "Chau Philomene One", sans-serif;
+}
+
+.info {
+  color: rgb(3, 3, 3);
+  background-color: rgb(255, 229, 202);
+  border: 3px solid rgb(19, 16, 16);
+  border-radius: 5px;
+  padding: 10px;
+  opacity: .78;
+  font-size: 25px;;
 }
 
 .top-nav.open {
@@ -122,13 +154,12 @@ li {
 
 a {
   cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
+  /* -webkit-transition: 0.3s ease-in-out;
   -webkit-transform: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
-  -moz-transform: 0.3s ease-in-out;
+  -moz-transform: 0.3s ease-in-out; */
   transition: 0.3s ease-in-out;
   transform: 0.3s ease-in-out;
-
 }
 .menu-toggler.open {
   transform: rotate(-45deg);
@@ -138,7 +169,7 @@ a {
   background: linear-gradient(to top, #ffe838, #915178);
   width: 100%;
   height: 4px;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .bar-half {
@@ -151,7 +182,7 @@ a {
 }
 
 .open .bar.start {
-  transform: rotate(-485deg) translateX(.8rem);
+  transform: rotate(-485deg) translateX(0.8rem);
 }
 
 .bar-end {
@@ -160,7 +191,25 @@ a {
   transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
 .open .bar.end {
-  transform: rotate(-485deg) translateX(-.8rem);
+  transform: rotate(-485deg) translateX(-0.8rem);
+}
+
+.profile-img {
+  max-width: 300px;
+  max-height: 400px;
+  min-width: auto;
+  min-height: auto;
+  border-radius: 20px;
+}
+.main-img {
+  border-color: rgb(43, 172, 142);
+  border-style: solid;
+  max-width: 900px;
+  max-height: 600px;
+  min-width: 900px;
+  min-height: 600px;
+  flex: 0 0 0;
+  box-shadow: 5px 5px 5px #212020;
 }
 
 .project-img {
@@ -174,6 +223,13 @@ a {
   box-shadow: 5px 5px 5px #212020;
 }
 
+.link-item:hover {
+  border-color: rgb(240, 206, 170);
+  border-style: solid;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+  padding: 10px;
+}
 /* .label {
   Adding the text to be placed on the photo in work boxes
   font-size: 1rem;
@@ -186,4 +242,3 @@ a {
   color: var(--white);
    box-shadow: 5px 5px 5px #212020; 
 }  */
-
