@@ -1,147 +1,169 @@
 /* Styled for every section of the page */
 * {
   box-sizing: border-box;
-  font-family: "Abel", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Shadows Into Light', cursive;
+  text-decoration: none;
 }
 
-/* variable function for repeated use */
-:root {
-  --white: #ffffff;
-  --peachpuff: rgba(235, 143, 104, 0.913);
-  --teal: teal;
+body {
+  /* font-family: monospace; */
+  background: url(/assets/images/bg-design.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
+.main-container {
+  display: grid;
+  grid-template-rows: .5fr 4fr .5fr;
+  /* grid-template-columns: 2fr 4fr; */
+  grid-gap: 30px;
+}
 
 header {
   width: 100%;
+  /* height: 100vh; */
 }
-/* formats for each header section */
-h1 {
-  float: left;
-  font-size: 50px;
-  font-weight: bold;
-  color: var(--teal);
+
+.top-nav {
+  width: 100%;
+  position: fixed;
+  color: rgb(175, 122, 235); 
+  /* border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%; */
+  transition: all 650ms cubic-bezier(1,0,0,1);
+}
+
+h2 {
+  padding: 10px;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px;
+}
+
+.details {
+  display: grid;
+  /* grid-template-rows: 1fr 3fr 1fr; */
+  grid-template-columns: 2fr 6fr;
+  grid-gap: 10px;
+  padding: 10px;
+  /* margin: 10px; */
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 3fr 6fr;
+}
+
+.assignments {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  width: 100%;
   padding: 10px;
 }
 
-.name {
-  float: left;
-  font-size: 50px;
-  font-weight: bold;
-  color: var(--teal);
-  padding: 10px;
-}
-/* Style the body */
-body {
-
-  background-image: url(./images/bg-design.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  /* background */
-  /* width: 100vh; */
-}
-
-/* rules for the vertical line for each section */
-.verticalLine {
-  border-left: 7px solid var(--teal);
-  height: 270px;
-  margin-top: 20px;
-}
-
-.verticalLine-work {
-  border-left: 7px solid var(--teal);
-  height: 95%;
-  margin-top: 20px;
-}
-
-.verticalLine-contact {
-  border-left: 7px solid var(--teal);
-  height: 150px;
-  margin-top: 20px;
-}
-
-.row {
-  padding-top: 10px;
-  display: flex;
-  flex: wrap;
-}
-
-/* Controlling size and format for the h1 titles */
-.title {
-  font-size: 50px;
-  font-weight: bold;
-  color: var(--teal);
-  float: right;
-  padding: 10px;
-}
-
-.col-3 {
-  float: left;
-  flex: wrap;
-}
-
-/* only rules for the image */
-.col-3 img {
-  justify-content: left;
-  margin-top: 10px;
-  padding-top: -30px;
-  padding-bottom: 10px;
-  max-height: 250px;
-  max-width: 250px;
-  margin-right: 75%;
-}
-
-/* overall justifications for column-9 */
-.col-9 {
-  top: 10px;
-  padding: 10px;
-  justify-content: space-around;
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  /* display: grid;
+.contact {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px; */
-  padding: 15px;
-  margin: 5px;
-  justify-content: space-between;
-  width: 800px;
-  margin-right: 100px;
-  font-size: 30px;
-}
-/* overall column-12 justifications */
-.col-12 {
-  justify-content: center;
-  margin-left: 9%;
+  grid-gap: 20px;
+  justify-content: space-evenly;
 }
 
-/* format for image box in column-12 */
-.col-12 img {
-  border-color: rgb(43, 172, 142);
-  border-style: solid;
-  align-items: center;
-  max-width: 900px;
-  max-height: 700px;
-  min-width: 900px;
-  min-height: 700px;
-  box-shadow: 5px 5px 5px #212020;
-  padding: 10px;
-}
-
-.col-6 {
+.nav-list {
+  list-style: none;
+  width: 100%;
+  /* height: 100%; */
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  flex-wrap: wrap;
-  flex: auto;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-/* Properties for the photos in the boxes in "Work" section */
-.col-6 img {
+li {
+  margin: 0 2rem;
+}
+
+.nav-link {
+  font-family: sans-serif;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: linear-gradient(to top, #ffe838, #915178);
+  --webkit-background-clip: text;
+  --webkit-text-fill-color: transparent;
+}
+
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1500;
+  transition: transform 650ms ease-out;
+}
+
+a {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -webkit-transform: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -moz-transform: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  transform: 0.3s ease-in-out;
+
+}
+.menu-toggler.open {
+  transform: rotate(-45deg);
+}
+
+.bar {
+  background: linear-gradient(to top, #ffe838, #915178);
+  width: 100%;
+  height: 4px;
+  border-radius: .8rem;
+}
+
+.bar-half {
+  width: 50%;
+}
+
+.bar-start {
+  transform-origin: right;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.start {
+  transform: rotate(-485deg) translateX(.8rem);
+}
+
+.bar-end {
+  align-self: flex-end;
+  transform-origin: left;
+  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+.open .bar.end {
+  transform: rotate(-485deg) translateX(-.8rem);
+}
+
+.project-img {
   border-color: rgb(43, 172, 142);
   border-style: solid;
   max-width: 500px;
@@ -152,53 +174,8 @@ body {
   box-shadow: 5px 5px 5px #212020;
 }
 
-.col-6 img:hover {
-  border-color: rgb(21, 89, 89);
-  border-style: solid;
-  transition: all 0.3s ease 0s;
-  border-radius: 3px;
-}
-
-.col-12 img:hover {
-  border-color: rgb(21, 89, 89);
-  border-style: solid;
-  transition: all 0.3s ease 0s;
-  border-radius: 3px;
-}
-
-p {
-  font-size: 25px;
-}
-
-/* Padding per each div column */
-.divPadding {
-  margin-bottom: 35px;
-  margin-top: 40px;
-  margin-left: 0;
-  padding-top: 20px;
-}
-
-/* to place the item on the image as in text */
-.item > img {
-  width: 100%;
-  height: auto;
-  display: block; /* to get rid of whitespace */
-  position: relative;
-  justify-content: space-between;
-}
-
-#logo {
-  width: 70px;
-  height: 70px;
-  /* margin-top: 35px; */
-  justify-content: left;
-  opacity: 0.78;
-  margin-left: -16px;
-  /* align-self: stretch; */
-}
-
-.label {
-  /* Adding the text to be placed on the photo in work boxes*/
+/* .label {
+  Adding the text to be placed on the photo in work boxes
   font-size: 1rem;
   line-height: 3;
   padding: 0 1rem;
@@ -207,91 +184,6 @@ p {
   left: 25px;
   background-color: rgb(57, 112, 240);
   color: var(--white);
-  box-shadow: 5px 5px 5px #212020;
-}
+   box-shadow: 5px 5px 5px #212020; 
+}  */
 
-a {
-  color: var(--teal);
-}
-
-.link-item:hover {
-  border-color: var(--teal);
-  border-style: solid;
-  transition: all 0.3s ease 0s;
-  border-radius: 3px;
-}
-
-/* Change color on hover */
-.nav-item:hover {
-  border-bottom: 3px solid var(--peachpuff);
-  /* font-size: 25px; */
-}
-
-.navbar-nav {
-  display: flex;
-  flex: wrap;
-  width: 100%;
-  opacity: 0.78;
-  font-size: 30px;
-  float: right;
-  position: sticky;
-}
-
-/* .col- {
-  width: 100%;
-} */
-
-/* Footer element formatting */
-footer {
-  color: var(--black);
-  text-align: center;
-  /* background-color: var(--white); */
-  font-size: 30px;
-  position: sticky; /* Added to keep footer at bottom of page */
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 300px) {
-  .row,
-  .navbar,
-  .col-3,
-  .col-9,
-  .col-6 {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @media only screen and (max-width: 800px) {
-    /* For tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
-    }
-    .right {
-      width: 100%;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
-    .container,
-    .body,
-    .right,
-    .navbar-nav {
-      width: 100%;
-    }
-    .col-3 {
-      width: 30%;
-    }
-    .col-9 {
-      width: 70%;
-    }
-  }
-}
-
-/* Generate the small columns */
-.make-sm-column {
-  position: relative;
-  /* Prevent columns from collapsing when empty */
-  min-height: 1px;
-}
