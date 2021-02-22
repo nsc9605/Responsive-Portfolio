@@ -7,7 +7,6 @@
   font-family: "Chau Philomene One", sans-serif;
   text-decoration: none;
 }
-
 body {
   /* background-color: rgb(255, 255, 255); */
   /* font-family: monospace; */
@@ -19,37 +18,23 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
-.main-container {
-  display: grid;
-  grid-template-rows: 0.5fr 4fr 0.5fr;
-  /* grid-template-columns: 2fr 4fr; */
-  grid-gap: 30px;
-}
 
-/* header {
+img {
   width: 100%;
-  height: 40vh;
-  padding: 20px;
-  background-image: url(/assets/images/self.jpeg);
-  background-size: contain;
-} */
+}
 
 .top-nav {
   width: 100%;
   padding-top: 10px;
   /* position: fixed; */
   color: rgb(175, 122, 235);
-  /* border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%; */
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
   font-family: "Chau Philomene One", sans-serif;
 }
-
 .top-nav.open {
   top: 0;
   border-radius: initial;
 }
-
 h1 {
   font-size: 95px;
   padding: 10px;
@@ -58,7 +43,6 @@ h1 {
     -1px -1px 1px #000;
   font-family: "Chau Philomene One", sans-serif;
 }
-
 h2 {
   padding: 10px;
   font-size: 70px;
@@ -68,6 +52,10 @@ h2 {
   font-family: "Chau Philomene One", sans-serif;
 }
 
+h3 {
+  font-size: 30px;
+  font-family: "Chau Philomene One", sans-serif;
+}
 .nav-list {
   list-style: none;
   width: 100%;
@@ -76,11 +64,9 @@ h2 {
   align-items: center;
   font-family: "Chau Philomene One", sans-serif;
 }
-
 li {
   margin: 0 2rem;
 }
-
 ul li a {
   transition: all 0.3s ease 0s;
   font-size: 30px;
@@ -92,7 +78,6 @@ ul li a {
   padding: 0 10px;
   font-family: "Chau Philomene One", sans-serif;
 }
-
 li:hover,
 li:focus {
   color: rgb(67, 206, 141);
@@ -103,20 +88,89 @@ li:focus {
   transition: all 0.3s ease 0s;
   font-family: "Chau Philomene One", sans-serif;
 }
-
-.details {
-  display: grid;
-  /* grid-template-rows: 1fr 3fr 1fr; */
-  grid-template-columns: 2fr 6fr;
-  grid-gap: 10px;
-  padding: 10px;
-  /* margin: 10px; */
+@media (min-width: 100px) {
+  .details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .portfolio-item-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
-
+@media (min-width: 650px) {
+  .details {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+  }
+  .portfolio-item-grid {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+  }
+}
+@media (min-width: 900px) {
+  .details {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .portfolio-item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+  }
+}
+.icons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 400px;
+  margin: auto;
+}
 .aboutme {
   padding-top: 10px;
 }
-
 .assignments {
   display: grid;
   grid-template-columns: 3fr 3fr;
@@ -129,14 +183,12 @@ li:focus {
   padding-top: 10px;
   margin: 0 auto;
 }
-
 .contact {
   display: grid;
   grid-template-columns: repeat(4, 0.5fr);
   grid-gap: 10px;
   justify-content: space-evenly;
 }
-
 .info {
   color: rgb(3, 3, 3);
   background-color: rgb(255, 229, 202);
@@ -152,7 +204,6 @@ li:focus {
   height: auto;
   margin: 0 auto;
 }
-
 .logo {
   font-size: 40px;
   padding: 10px;
@@ -162,7 +213,6 @@ li:focus {
   font-family: "Chau Philomene One", sans-serif;
   margin-left: 7%;
 }
-
 .subtitle {
   font-size: 40px;
   padding: 10px;
@@ -170,7 +220,6 @@ li:focus {
   text-shadow: 4px 4px 4px black, -1px 1px 2px #000, 1px -1px 1px #000,
     -1px -1px 1px #000;
 }
-
 a {
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
@@ -180,37 +229,16 @@ a {
   transition: 0.3s ease-in-out;
   transform: 0.3s ease-in-out;
 }
-
 .profile-img {
-  max-width: 400px;
-  max-height: 500px;
-  min-width: auto;
-  min-height: auto;
   border-radius: 20px;
-  padding: 10px;
-}
-.main-img {
-  border-color: rgb(43, 172, 142);
-  border-style: solid;
-  max-width: 900px;
-  max-height: 600px;
-  min-width: 900px;
-  min-height: 600px;
-  flex: 0 0 0;
-  box-shadow: 5px 5px 5px #212020;
 }
 
 .project-img {
   border-color: rgb(43, 172, 142);
   border-style: solid;
-  max-width: 500px;
-  max-height: 400px;
-  min-width: 500px;
-  min-height: 400px;
-  flex: 0 0 0;
   box-shadow: 5px 5px 5px #212020;
+  max-height: 500px;
 }
-
 .link-item:hover {
   border-color: rgb(240, 206, 170);
   border-style: solid;
@@ -218,47 +246,13 @@ a {
   border-radius: 5px;
   padding: 10px;
 }
-.label {
-  /* Adding the text to be placed on the photo in work boxes */
-  font-size: 1.5rem;
-  line-height: 3;
-  padding: 0 1rem;
-  position: absolute;
-  /* background-color: rgba(19, 104, 64, 0.982); */
-  background-color: rgba(65, 167, 77, 0.899);
-  color: white;
-  box-shadow: 5px 5px 5px #212020;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
-.github {
-  font-size: 1rem;
-  line-height: 2;
-  padding: 0 1rem;
-  position: sticky;
-  /* background-color: rgba(19, 104, 64, 0.982); */
-  background-color: rgba(65, 167, 77, 0.899);
-  color: white;
-  box-shadow: 5px 5px 5px #212020;
-}
 
+.project-framework{
+  text-decoration: underline;
+}
 footer {
   position: sticky;
   text-align: center;
   font-size: 2rem;
 }
-
-/* .menu-toggler {
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  width: 5rem;
-  height: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  z-index: 1500;
-  transition: transform 650ms ease-out;
-} */

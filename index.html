@@ -1,227 +1,203 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nicole Catapano Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://www.flaticon.com/svg/static/icons/svg/3069/3069264.svg"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&family=Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-
-  <body>
-    <header>
-      <!-- <div class="menu-toggler">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Nicole Catapano Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/3069/3069264.svg" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&family=Shadows+Into+Light&display=swap"
+		rel="stylesheet" />
+		<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+	<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+	<header>
+		<!-- <div class="menu-toggler">
         <div class="bar half start"></div>
         <div class="bar"></div>
         <div class="bar half end"></div>
       </div> -->
+		<nav class="top-nav">
+			<div class="max-width">
+				<ul class="nav-list">
+					<li><a href="#aboutme">About Me</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contactme">Contact Me</a></li>
+					<li><a href="assets/WebDev Resume.pdf">Resume</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div>
+			<h1 class="uk-animation-slide-left">Nicole Catapano</h1>
+			<div class="logo">
+				<p>Full<span class="subtitle">Stack</span>Web<span class="subtitle">Developer</span></p>
+			</div>
+		</div>
+	</header>
+	<div class="main-container">
+		<div class="aboutme" id="aboutme">
+			<div class="details">
+				<h2>
+					About Me
+					<img src="assets/images/self.jpeg" alt="Nicole Catapano" class="profile-img" />
+				</h2>
+				<p class="info">
+					I am originally from St. Louis, MO but currently live in Brooklyn,
+					NY. I earned my B.A. in Recreation Therapy and minor in Psychology
+					from the University of North Carolina at Wilmington in 2013. I later
+					realized I was much more interested in getting involved in the tech
+					world and thats what brings me to enrolling in the University of
+					North Carolina at Charlotte Coding Bootcamp. I have made connections
+					and a career change through bartending in the bars in Manhattan, NY.
+				</p>
+			</div>
+		</div>
 
-      <nav class="top-nav">
-        <div class="max-width">
-          <!-- <div class="logo"><a href="#">Full<span>Stack</span>Developer</a></div> -->
-          <ul class="nav-list">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contactme">Contact Me</a></li>
-            <li><a href="assets/WebDev Resume.pdf">Resume</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div>
-      <h1>Nicole Catapano</h1>
-      <div class="logo">
-        <p>Full<span class="subtitle">Stack</span>Web<span class="subtitle">Developer</span></p>
-      </div>
-      <!-- </div> -->
-    </header>
-
-    <div class="main-container">
-      <div class="aboutme" id="aboutme">
-        <div class="details">
-          <h2>
-            About Me
-              <img src="/assets/images/self.jpeg" alt="" class="profile-img" />
-          </h2>
-          <p class="info">
-            I am originally from St. Louis, MO but currently live in Brooklyn,
-            NY. I earned my B.A. in Recreation Therapy and minor in Psychology
-            from the University of North Carolina at Wilmington in 2013. I later
-            realized I was much more interested in getting involved in the tech
-            world and thats what brings me to enrolling in the University of
-            North Carolina at Charlotte Coding Bootcamp. I have made connections
-            and a career change through working in the bars in Manhattan, NY.
-          </p>
-        </div>
-      </div>
-
-      <div class="work" id="work">
-        <div class="details">
-          <h2>Work</h2>
-          <div class="assignments">
-            <div cla>
-              <a
-                href="https://burger-boss-catapano.herokuapp.com"
-                target="_blank"
-                ><p class="label">Burger Boss</p></a
-              >
-              <a
-                href="https://github.com/nsc9605/Burger-Boss.git"
-                target="_blank"
-                ><p class="github">GitHub Repository</p></a
-              >
-              <img
-                src="assets/images/Burger-Boss.gif"
-                alt="Burger Boss"
-                title="Burger application add and devour burgers!"
-                class="main-img"
-              />
-            </div>
-
-            <div>
-              <a
-                href="https://nsc9605.github.io/WorkDay_Scheduler/"
-                target="_blank"
-                ><p class="label">WorkDay Scheduluer</p></a
-              >
-              <a
-                href="https://github.com/nsc9605/WorkDay_Scheduler.git"
-                target="_blank"
-                ><p class="github">GitHub Repository</p></a
-              >
-              <img
-                src="assets/images/WorkDay-Demo.png"
-                alt="planner"
-                title="WorkDay Scheduler Application Preview"
-                class="project-img"
-              />
-            </div>
-
-            <div>
-              <a href="https://nsc9605.github.io/MusicJunkies/" target="_blank"
-                ><p class="label">MusicJunkies</p></a
-              >
-              <a
-                href="https://github.com/nsc9605/MusicJunkies.git"
-                target="_blank"
-                ><p class="github">GitHub Repository</p></a
-              >
-              <img
-                src="assets/images/MusicJ.png"
-                alt="Music Junkies"
-                title="Music Junkies Application Demonstration"
-                class="project-img"
-              />
-            </div>
-
-            <div>
-              <a
-                href="https://nsc9605.github.io/WeatherDashboard_API/"
-                target="_blank"
-                ><p class="label">Weather Dashboard</p></a
-              >
-              <a
-                href="https://github.com/nsc9605/WeatherDashboard_API.git"
-                target="_blank"
-                ><p class="github">GitHub Repository</p></a
-              >
-              <img
-                src="assets/images/weather-dash.png"
-                alt="weather"
-                title="Weather Dashboard application for current and 5-day"
-                class="project-img"
-              />
-            </div>
-            <div>
-              <a
-                href="https://github.com/nsc9605/Software-Engineer-TeamGen.git"
-                target="_blank"
-              ><p class="label">Software Engineer Team Developer</p></a>
-              <a
-              href="https://github.com/nsc9605/Software-Engineer-TeamGen.git"
-              target="_blank"
-              ><p class="github">GitHub Repository</p></a>
-                <img
-                  src="assets/images/softwareEng.png"
-                  alt="software team generator"
-                  title="Application generates software team generator"
-                  class="project-img"
-              />
+  </div>
+		<div class="projects-grid" id="projects">
+			<div>
+				<h2>Projects</h2>
+			</div>
+			<div>
+				<div class="portfolio-item-grid">
+          <div class="uk-inline">
+            <img src="assets/images/burg-demo.png" alt="burger boss"
+              title="Music application depending on date" class="project-img" />
+            <div class="uk-overlay uk-overlay-default uk-position-bottom">
+            <a href="https://burger-boss-catapano.herokuapp.com" target="_blank">
+              <h3>Burger Boss</h3>
+            </a>
+            <p>Music application that shows the top 5 songs in history for a given date.
+              <br>
+              <span class="project-framework">Languages / Tech:</span> HTML/CSS, JavaScript, jQuery, APIs,
+              <br>
+              <a href="https://github.com/nsc9605/Burger-Boss.git" target="_blank">
+              GitHub Repository
+            </a></p>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="contactme" id="contactme">
-        <div class="details">
-          <h2>Contact Me</h2>
-          <div class="contact">
-            <a href="tel:314-221-0441">
-              <img
-                src="https://img.icons8.com/ios-filled/100/000000/apple-phone.png"
-                class="link-item"
-              />
+          <div class="uk-inline">
+            <img src="assets/images/db-screen.png" alt="test your luck"
+					  	title="Betting application" class="project-img"/>
+            <div class="uk-overlay uk-overlay-default uk-position-bottom">
+					  <a href="https://test-your-luck.herokuapp.com/" target="_blank">
+              <h3>Test Your Luck!</h3>
             </a>
-            <a
-              href="mailto:nsc9605@gmail.com"
-              target="_blank"
-              alt="email"
-              title="Click to launch email"
-            >
-              <img
-                src="https://img.icons8.com/dotty/100/000000/new-post.png"
-                class="link-item"
-              />
+            <p>Sports betting application that allows the user to place bets between two teams depending on the odds.
+              <br>
+              <span class="project-framework">Languages / Tech:</span> HTML/CSS, APIs, JavaScript, jQuery, SQL, NodeJS, Express, Handlebars.  
+              <br>
+					    <a href="https://github.com/nsc9605/Test_Your-Luck.git" target="_blank">
+					  	GitHub Repository
+					  </a></p>
+            </div>
+			    </div>
+          <div class="uk-inline">
+            <img src="assets/images/music.png" alt="music junkies"
+              title="Music application depending on date" class="project-img" />
+            <div class="uk-overlay uk-overlay-default uk-position-bottom">
+            <a href="https://nsc9605.github.io/MusicJunkies/" target="_blank">
+              <h3>Music Junkies</h3>
             </a>
-            <a
-              href="https://github.com/nsc9605"
-              target="_blank"
-              alt="github"
-              title="Click to launch GitHub account"
-            >
-              <img
-                src="https://img.icons8.com/fluent/100/000000/github.png"
-                class="link-item"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nicole-catapano-4686951b0"
-              target="_blank"
-              alt="linkedIn"
-              title="Click to launch LinkedIn page"
-            >
-              <img
-                src="https://img.icons8.com/doodle/100/000000/linkedin--v2.png"
-                class="link-item"
-              />
-            </a>
+            <p>Music application that shows the top 5 songs in history for a given date.
+              <br>
+              <span class="project-framework">Languages / Tech:</span> HTML/CSS, JavaScript, jQuery, APIs,
+              <br>
+              <a href="https://github.com/nsc9605/MusicJunkies.git" target="_blank">
+              GitHub Repository
+            </a></p>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Footer -->
-      <footer>
-        <div>© 2020 Nicole Catapano</div>
-      </footer>
-    </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
-  </body>
+          <div class="uk-inline">
+            <img src="assets/images/note-taker.png" alt="software team generator"
+              title="Employee team generator for business" class="project-img" />
+            <div class="uk-overlay uk-overlay-default uk-position-bottom">
+            <a href="https://nsc9605.github.io/Software-Engineer-TeamGen/" target="_blank">
+              <h3>Software Team Generator</h3>
+            </a>
+            <p>This is a software engineering team generator command line application using Node CLI.
+              <br>
+              <span class="project-framework">Languages / Tech:</span> JavaScript, API, HTML/CSS
+              <br>
+              <a href="https://github.com/nsc9605/Software-Engineer-TeamGen.git" target="_blank">
+              GitHub Repository
+              </a></p>
+            </div>
+          </div>
+          <div class="uk-inline">
+            <img src="assets/images/weather.png" alt="weather"
+              title="Weather Dashboard application for current and 5-day" class="project-img" />
+            <div class="uk-overlay uk-overlay-default uk-position-bottom">
+            <a href="https://nsc9605.github.io/WeatherDashboard_API/" target="_blank">
+              <h3>Weather Dashboard</h3>
+            </a>
+            <p>Application uses an API to call the current weather conditions for an input city as well as the 5-day forecast.
+              <br>
+              <span class="project-framework">Languages / Tech:</span> JavaScript, API, HTML/CSS
+              <br>
+              <a href="https://github.com/nsc9605/WeatherDashboard_API.git" target="_blank">
+              GitHub Repository
+            </a></p>
+            </div>
+          </div>
+          <div class="uk-inline">
+            <img src="assets/images/scheduler.png" alt="workday scheduler"
+              title="Music application depending on date" class="project-img" />
+            <div class="uk-overlay uk-overlay-default uk-position-bottom">
+            <a href="https://nsc9605.github.io/Workday_Scheduler/" target="_blank">
+              <h3>Work Day Scheduler</h3>
+            </a>
+            <p>A weekly calendar for the average work day 8-5pm time blocks that change color for past, present, future depending on what time it is where it is opened.
+              <br>
+              <span class="project-framework">Languages / Tech:</span> HTML/CSS, JavaScript, jQuery, MomentJS
+              <br>
+              <a href="https://github.com/nsc9605/Workday_Scheduler.git" target="_blank">
+              GitHub Repository
+            </a></p>
+            </div>
+          </div>
+				</div>
+			</div>
+      
+		</div>
+		
+		<div class="contact-grid">
+			<h2>Contact Me</h2>
+			<div>
+				<div class="icons-grid">
+					<a href="tel:314-221-0441">
+						<img src="https://img.icons8.com/ios-filled/100/000000/apple-phone.png" class="link-item" />
+					</a>
+					<a href="mailto:nsc9605@gmail.com" target="_blank" alt="email" title="Click to launch email">
+						<img src="https://img.icons8.com/dotty/100/000000/new-post.png" class="link-item" />
+					</a>
+					<a href="https://github.com/nsc9605" target="_blank" alt="github"
+						title="Click to launch GitHub account">
+						<img src="https://img.icons8.com/fluent/100/000000/github.png" class="link-item" />
+					</a>
+					<a href="https://www.linkedin.com/in/nicole-catapano-4686951b0" target="_blank" alt="linkedIn"
+						title="Click to launch LinkedIn page">
+						<img src="https://img.icons8.com/doodle/100/000000/linkedin--v2.png" class="link-item" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer>
+			<div>© 2020 Nicole Catapano</div>
+		</footer>
+	</div>
+	
+</body>
 </html>
+
