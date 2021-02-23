@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a professional portfolio displaying information about me, projects I have completed with description, deployed link and link to GitHub Repo as well. Included is a recent headshot as well as some background information about me. This page is user friendly and when you click one of the links in the navigation, it scrolls to each corresponding section.
+This is a professional portfolio displaying information about me, projects I have completed with description, deployed link and link to GitHub Repository as well. Included is a recent photograph as well as some background information about me. This page is user friendly and when you click one of the links in the navigation, it scrolls to each corresponding section.
 
 :round_pushpin: [Click here to view deployed page!](https://nsc9605.github.io/Responsive-Portfolio/) :round_pushpin:
 
@@ -32,8 +32,8 @@ This is a professional portfolio displaying information about me, projects I hav
 
 ## Features
 
-- When the user clicks on the navlink item it scrolls to the section corresponding to the topic. 
-- When `About Me` is selected, it will bring down to headshot and description about me if the user choses to read.
+- When the user clicks on the nav-link item it scrolls to the section corresponding to the topic. 
+- When `About Me` is selected, it will drop down to a photograph and description about me.
 - In the `Projects` section, applications are showcased with titled images, short description, languages/tech used and link to Github repo are provided for each. 
 - Links to social bars are provided in the `Contact Me` section at the bottom of the page. When an icon is pressed, it will take you directly to the page such as my `LinkedIn` page, `GitHub` Profile, as well as open a new `email` draft when clicked depending on the users provider, and the `phone` icon is set to call when clicked, or user can hover over the icon and the links/info will be displayed at the bottom of the page.
 - When `Resume` is clicked it will provide a downloadable PDF file of my up-to-date resume.

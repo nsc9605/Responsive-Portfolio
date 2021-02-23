@@ -16,6 +16,9 @@ body {
   background-size: cover;
 }
 
+header {
+  background: url()
+}
 img {
   width: 100%;
 }
@@ -54,13 +57,13 @@ h2 {
 }
 /* header settings for each project */
 h3 {
-  font-size: 30px;
+  font-size: 45px;
   font-family: "Chau Philomene One", sans-serif;
   color: rgb(255, 225, 194);
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: rgb(6, 6, 6);
   text-shadow: 1px 1px 1px rgb(19, 16, 16);
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 ul li a {
@@ -173,7 +176,18 @@ a {
 }
 
 .portfolio-item-grid p {
-  font-size: 15px;
+  font-size: 17px;
+}
+
+.portfolio-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  padding: 10px;
 }
 
 footer {
@@ -223,13 +237,13 @@ footer {
   }
   .details {
     display: grid;
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 3fr 6fr;
     grid-gap: 10px;
     padding: 10px;
   }
   .projects-grid {
     display: grid;
-    grid-template-columns: 4fr 5fr;
+    grid-template-columns: 3fr 6fr;
     grid-gap: 10px;
     padding: 10px;
   }
@@ -275,6 +289,10 @@ footer {
     text-overflow: ellipsis;
     white-space: wrap;
     padding: 10px;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
   }
 }
 

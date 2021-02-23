@@ -8,18 +8,13 @@
   <!-- font plugins -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet" />
 	<link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/3069/3069264.svg" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&family=Shadows+Into+Light&display=swap"
-		rel="stylesheet" />
 		<!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
-<!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
 	<link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -66,7 +61,7 @@
 				</p>
 			</div>
 		</div>
-  </div>
+  <!-- </div> -->
   <!-- Project section -->
 		<div class="projects-grid" id="projects">
 			<div>
@@ -76,9 +71,10 @@
         <!-- Grid setting for projects to align page evenly -->
 				<div class="portfolio-item-grid">
           <!-- Place title and links on each project -->
-          <div class="uk-inline">
+          <div class="uk-inline uk-animation-toggle" tabindex="0">
+            <div class="uk-animation-fade">
             <img src="assets/images/burg.png" alt="burger boss"
-              title="Music application depending on date" class="project-img" />
+              title="Burger App click to deploy" class="project-img" />
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
               <!-- Link to deployed app -->
             <a href="https://burger-boss-catapano.herokuapp.com" target="_blank">
@@ -97,7 +93,9 @@
             </a></p>
             </div>
           </div>
-          <div class="uk-inline">
+          </div>
+          <div class="uk-inline uk-animation-toggle">
+            <div class="uk-animation-fade">
             <img src="assets/images/luck.png" alt="test your luck"
 					  	title="Betting application" class="project-img"/>
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
@@ -112,8 +110,10 @@
 					  	GitHub Repository
 					  </a></p>
             </div>
+            </div>
 			    </div>
-          <div class="uk-inline">
+          <div class="uk-inline uk-animation-toggle">
+            <div class="uk-animation-fade">
             <img src="assets/images/music.png" alt="music junkies"
               title="Music application depending on date" class="project-img" />
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
@@ -129,9 +129,11 @@
             </a></p>
             </div>
           </div>
-          <div class="uk-inline">
+          </div>
+          <div class="uk-inline uk-animation-toggle">
+            <div class="uk-animation-fade">
             <img src="assets/images/note-taker.png" alt="software team generator"
-              title="Employee team generator for business" class="project-img" />
+              title="Note taking app" class="project-img" />
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
             <a href="https://pacific-thicket-92509.herokuapp.com/" target="_blank">
               <h3>Express Note Taker</h3>
@@ -144,8 +146,10 @@
               GitHub Repository
               </a></p>
             </div>
+            </div>
           </div>
-          <div class="uk-inline">
+          <div class="uk-inline uk-animation-toggle">
+            <div class="uk-animation-fade">
             <img src="assets/images/weather.png" alt="weather"
               title="Weather Dashboard application for current and 5-day" class="project-img" />
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
@@ -160,15 +164,17 @@
               GitHub Repository
             </a></p>
             </div>
+            </div>
           </div>
-          <div class="uk-inline">
+          <div class="uk-inline uk-animation-toggle">
+            <div class="uk-animation-fade">
             <img src="assets/images/scheduler.png" alt="workday scheduler"
-              title="Music application depending on date" class="project-img" />
+              title="Scheduling app to use weekly" class="project-img" />
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
             <a href="https://nsc9605.github.io/Workday_Scheduler/" target="_blank">
               <h3>Work Day Scheduler</h3>
             </a>
-            <p>A weekly calendar app during the 8-5pm time block that change color for past, present, future depending on local time.
+            <p>A weekly scheduling app during the 8-5pm time block that change color for past, present, future depending on local time.
               <br>
               <span class="project-framework">Languages/Tech:</span> HTML/CSS, JavaScript, jQuery, MomentJS
               <br>
@@ -177,14 +183,14 @@
             </a></p>
             </div>
           </div>
+          </div>
 				</div>
 			</div>
       
 		</div>
 		<!-- Contact section -->
 		<div class="contact-grid" id="contactme">
-			<h2>Contact Me</h2>
-			<div>
+			  <h2>Contact Me</h2>
         <!-- Set icons in a grid to be displayed on page even -->
 				<div class="icons-grid">
 					<a href="tel:314-221-0441">
@@ -203,13 +209,13 @@
           </a>
 				</div>
 			</div>
-		</div>
+    </div>
+		
 		<!-- Footer -->
 		<footer>
 			<div>© 2020 Nicole Catapano</div>
 		</footer>
 	</div>
-	
 </body>
 </html>
 
