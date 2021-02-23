@@ -5,9 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Nicole Catapano Portfolio</title>
+  <!-- font plugins -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet" />
@@ -24,18 +24,14 @@
 </head>
 <body>
 	<header>
-		<!-- <div class="menu-toggler">
-        <div class="bar half start"></div>
-        <div class="bar"></div>
-        <div class="bar half end"></div>
-      </div> -->
+    <!-- navbar -->
 		<nav class="top-nav">
 			<div class="max-width">
 				<ul class="nav-list">
 					<li><a href="#aboutme"><i class="fa fa-fw fa-user"></i> About Me</a></li>
 					<li><a href="#projects"><i class="fa fa-code"></i> Projects</a></li>
 					<li><a href="#contactme"><i class="fa fa-fw fa-envelope"></i> Contact Me</a></li>
-					<li><a href="assets/WebDev Resume.pdf"><i class="fa fa-download"></i> Resume</a></li>
+					<li><a href="assets/WebDevRes.pdf"><i class="fa fa-download"></i> Resume</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -46,11 +42,15 @@
 			</div>
 		</div>
 	</header>
+  <!-- main container to put everything in -->
 	<div class="main-container">
+    <!-- About me section -->
 		<div class="aboutme" id="aboutme">
+      <!-- Details container sets page in grid form -->
 			<div class="details">
 				<h2>
 					About Me
+          <!-- Headshot -->
 					<img src="assets/images/self.jpeg" alt="Nicole Catapano" class="profile-img" />
 				</h2>
 				<p class="info">
@@ -58,46 +58,55 @@
 					NY. I earned my B.A. in Recreation Therapy and minor in Psychology
 					from the University of North Carolina at Wilmington in 2013. I later
 					realized I was much more interested in getting involved in the tech
-					world and thats what brings me to enrolling in the University of
-					North Carolina at Charlotte Coding Bootcamp. I have made connections
-					and a career change through bartending in the bars in Manhattan, NY.
+					world and thats what lead me to obtaining a Full Stack Web Development Certification from University of North Carolina at Charlotte.
+          <br>
+          <br>
+          I have been bartending since graduation in New York City which has allowed me to network and figure out what industry I truly would like to work in and that is tech.
+					This has allowed me to make a career change but I will be taking all the useful skills i have developed after 15+ years in the service industry field.
 				</p>
 			</div>
 		</div>
-
   </div>
+  <!-- Project section -->
 		<div class="projects-grid" id="projects">
 			<div>
 				<h2>Projects</h2>
 			</div>
 			<div>
+        <!-- Grid setting for projects to align page evenly -->
 				<div class="portfolio-item-grid">
+          <!-- Place title and links on each project -->
           <div class="uk-inline">
-            <img src="assets/images/burg-demo.png" alt="burger boss"
+            <img src="assets/images/burg.png" alt="burger boss"
               title="Music application depending on date" class="project-img" />
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
+              <!-- Link to deployed app -->
             <a href="https://burger-boss-catapano.herokuapp.com" target="_blank">
+              <!-- Application title -->
               <h3>Burger Boss</h3>
             </a>
-            <p>Music application that shows the top 5 songs in history for a given date.
+            <!-- Application short description -->
+            <p>Application that allows you to create, devour, and delete burgers from a database.
               <br>
-              <span class="project-framework">Languages / Tech:</span> HTML/CSS, JavaScript, jQuery, APIs,
+              <!-- Main languages/tech used for project -->
+              <span class="project-framework">Languages/Tech:</span> NodeJS, jQuery, MySQL, Express
               <br>
+              <!-- Link to github repo-->
               <a href="https://github.com/nsc9605/Burger-Boss.git" target="_blank">
               GitHub Repository
             </a></p>
             </div>
           </div>
           <div class="uk-inline">
-            <img src="assets/images/db-screen.png" alt="test your luck"
+            <img src="assets/images/luck.png" alt="test your luck"
 					  	title="Betting application" class="project-img"/>
             <div class="uk-overlay uk-overlay-default uk-position-bottom">
 					  <a href="https://test-your-luck.herokuapp.com/" target="_blank">
               <h3>Test Your Luck!</h3>
             </a>
-            <p>Sports betting application that allows the user to place bets between two teams depending on the odds.
+            <p>Sports betting application depending on the odds generates your possible reward.
               <br>
-              <span class="project-framework">Languages / Tech:</span> HTML/CSS, APIs, JavaScript, jQuery, SQL, NodeJS, Express, Handlebars.  
+              <span class="project-framework">Languages/Tech:</span> API, jQuery, SQL, NodeJS, Handlebars  
               <br>
 					    <a href="https://github.com/nsc9605/Test_Your-Luck.git" target="_blank">
 					  	GitHub Repository
@@ -113,7 +122,7 @@
             </a>
             <p>Music application that shows the top 5 songs in history for a given date.
               <br>
-              <span class="project-framework">Languages / Tech:</span> HTML/CSS, JavaScript, jQuery, APIs,
+              <span class="project-framework">Languages/Tech:</span> HTML/CSS, jQuery, APIs, MomentJS
               <br>
               <a href="https://github.com/nsc9605/MusicJunkies.git" target="_blank">
               GitHub Repository
@@ -127,9 +136,9 @@
             <a href="https://pacific-thicket-92509.herokuapp.com/" target="_blank">
               <h3>Express Note Taker</h3>
             </a>
-            <p>This application will use an express backend and save and retrieve note data from a JSON file.
+            <p>Application uses express backend to create, save and retrieve note data from a JSON file.
               <br>
-              <span class="project-framework">Languages / Tech:</span> JavaScript, NodeJS, JSON, Express, HTML/CSS
+              <span class="project-framework">Languages/Tech:</span> JavaScript, NodeJS, JSON, Express
               <br>
               <a href="https://github.com/nsc9605/Express_NoteTaker.git" target="_blank">
               GitHub Repository
@@ -145,7 +154,7 @@
             </a>
             <p>Application uses an API to call the current weather conditions for an input city as well as the 5-day forecast.
               <br>
-              <span class="project-framework">Languages / Tech:</span> JavaScript, API, HTML/CSS
+              <span class="project-framework">Languages/Tech:</span> JavaScript, API, MomentJS, HTML/CSS
               <br>
               <a href="https://github.com/nsc9605/WeatherDashboard_API.git" target="_blank">
               GitHub Repository
@@ -159,9 +168,9 @@
             <a href="https://nsc9605.github.io/Workday_Scheduler/" target="_blank">
               <h3>Work Day Scheduler</h3>
             </a>
-            <p>A weekly calendar for the average work day 8-5pm time blocks that change color for past, present, future depending on what time it is where it is opened.
+            <p>A weekly calendar app during the 8-5pm time block that change color for past, present, future depending on local time.
               <br>
-              <span class="project-framework">Languages / Tech:</span> HTML/CSS, JavaScript, jQuery, MomentJS
+              <span class="project-framework">Languages/Tech:</span> HTML/CSS, JavaScript, jQuery, MomentJS
               <br>
               <a href="https://github.com/nsc9605/Workday_Scheduler.git" target="_blank">
               GitHub Repository
@@ -172,14 +181,15 @@
 			</div>
       
 		</div>
-		
+		<!-- Contact section -->
 		<div class="contact-grid" id="contactme">
 			<h2>Contact Me</h2>
 			<div>
+        <!-- Set icons in a grid to be displayed on page even -->
 				<div class="icons-grid">
 					<a href="tel:314-221-0441">
 						<img src="https://img.icons8.com/ios-filled/100/000000/apple-phone.png" class="link-item" />
-					</a>
+          </a>
 					<a href="mailto:nsc9605@gmail.com" target="_blank" alt="email" title="Click to launch email">
 						<img src="https://img.icons8.com/dotty/100/000000/new-post.png" class="link-item" />
 					</a>
@@ -187,10 +197,10 @@
 						title="Click to launch GitHub account">
 						<img src="https://img.icons8.com/fluent/100/000000/github.png" class="link-item" />
 					</a>
-					<a href="https://www.linkedin.com/in/nicole-catapano-4686951b0" target="_blank" alt="linkedIn"
+					<a href="https://www.linkedin.com/in/nicole-catapano" target="_blank" alt="linkedIn"
 						title="Click to launch LinkedIn page">
 						<img src="https://img.icons8.com/doodle/100/000000/linkedin--v2.png" class="link-item" />
-					</a>
+          </a>
 				</div>
 			</div>
 		</div>

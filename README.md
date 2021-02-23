@@ -1,30 +1,73 @@
 # Responsive-Portfolio
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 
-This is a professional portfolio of the web developer's background information, work, and how she can be contacted if interested for hire. Included is a recent photo of the developer and their name. This is a page that best showcases skills and talents to best highlight her strongest work and thought processes. This page is user friendly and when you click one of the links in the navigation, it scrolls to each corresponding section.
+This is a professional portfolio displaying information about me, projects I have completed with description, deployed link and link to GitHub Repo as well. Included is a recent headshot as well as some background information about me. This page is user friendly and when you click one of the links in the navigation, it scrolls to each corresponding section.
 
-When the user clicks on the link abut their work, it scrolls to the section with titled images of the developers applications, which are linked to their work which will deploy live when clicked. This page has a responsive layout that adapts to different viewport--allowing it to be used on different device layouts/screen sizes.
+:round_pushpin: [Click here to view deployed page!](https://nsc9605.github.io/Responsive-Portfolio/) :round_pushpin:
 
-While some of the photos in the "Work" section do not have links to deploy, they will be added later as more applications are created throughout the semester and well after. Developer provides links to deploy their own websites for contacting them i.e.; when you click on the email it brings up whatever mail provider a user has and a brand new email to fill out. When click on GitLab it deploys their personal account with all repositories, and when clicking LinkedIn it brings up their personal LinkedIn page.
+## Table of Contents
+
+- [Demonstration](#demonstration)
+- [Features](#features)
+- [Usage](#usage)
+- [License](#license)
+- [Contribution](#contribution)
+- [Technologies](#technologies)
+- [Contact Information](#contact-information)
+
+## Demonstration
+
+![Overview](assets/images/main.png)
+
+### About Me Section
+![AboutMe](assets/images/about.png)
+### Projects Section
+![Projects](assets/images/projects.png)
+### Contact Information
+![Contact](assets/images/contact.png)
 
 
-## Demo Screenshot
+## Features
 
-![Responsive-Portfolio-Demo](assets/images/demoshot.png)
+- When the user clicks on the navlink item it scrolls to the section corresponding to the topic. 
+- When `About Me` is selected, it will bring down to headshot and description about me if the user choses to read.
+- In the `Projects` section, applications are showcased with titled images, short description, languages/tech used and link to Github repo are provided for each. 
+- Links to social bars are provided in the `Contact Me` section at the bottom of the page. When an icon is pressed, it will take you directly to the page such as my `LinkedIn` page, `GitHub` Profile, as well as open a new `email` draft when clicked depending on the users provider, and the `phone` icon is set to call when clicked, or user can hover over the icon and the links/info will be displayed at the bottom of the page.
+- When `Resume` is clicked it will provide a downloadable PDF file of my up-to-date resume.
+- This page has a responsive layout that adapts to different viewport--allowing it to be used on different device layouts/screen sizes. 
 
 
-## Installation
+## Usage
 
 [Click here to deploy application!](https://nsc9605.github.io/Responsive-Portfolio/)
 
 
-## Tech/Framework Used
-
-VS Code
-
-
 ## License
 
-© 2020 Nicole Catapano 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+This application is licensed under the MIT License.
+
+
+## Contribution
+
+This project was creating with help from:
+
+- My tutor [Eric Wallen](https://github.com/ericwallen)
+- [W3Schools](https://w3schools.com)
+
+
+## Technologies
+
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [UIKit](https://getuikit.com)
+- Terminal
+
+## Contact Information
+
+- GitHub: [nsc9605](https://github.com/nsc9605)
+- Portfolio: [Deploy Portfolio](https://nsc9605.github.io/Responsive-Portfolio/)
+- Email: [Nicole Catapano](mailto:nsc9605@gmail.com)

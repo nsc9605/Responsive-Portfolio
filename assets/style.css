@@ -3,14 +3,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: "Shadows Into Light", cursive; */
   font-family: "Chau Philomene One", sans-serif;
   text-decoration: none;
 }
+
 body {
-  /* background-color: rgb(255, 255, 255); */
-  /* font-family: monospace; */
-  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5gnZdI1pq_n5XC2wSg0L9YwdqVDWeujxFDA&usqp=CAU)no-repeat center center fixed; */
   background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/11/15-Presentation-Background-Examples12.jpeg)
     no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -23,28 +20,21 @@ img {
   width: 100%;
 }
 
-/* .nav-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: flex-end;
-  font-family: "Chau Philomene One", sans-serif;
-} */
+/* Properties for navbar */
 .nav-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  justify-items: right;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap: 5px;
+  justify-items: end;
 }
 
 .top-nav {
-  /* width: 100%; */
   padding-top: 10px;
-  color: rgb(175, 122, 235);
+  color: rgb(116, 121, 117);
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
-
+/* Name properties */
 h1 {
   font-size: 95px;
   padding: 10px;
@@ -53,6 +43,7 @@ h1 {
     -1px -1px 1px #000;
   font-family: "Chau Philomene One", sans-serif;
 }
+/* each section heading properties */
 h2 {
   padding: 10px;
   font-size: 70px;
@@ -61,13 +52,13 @@ h2 {
     -1px -1px 1px #000;
   font-family: "Chau Philomene One", sans-serif;
 }
-
+/* header settings for each project */
 h3 {
   font-size: 30px;
   font-family: "Chau Philomene One", sans-serif;
-  color: lightgrey;
+  color: rgb(255, 225, 194);
   -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: rgb(48, 6, 48);
+  -webkit-text-stroke-color: rgb(6, 6, 6);
   text-shadow: 1px 1px 1px rgb(19, 16, 16);
   font-weight: bold;
 }
@@ -79,8 +70,7 @@ ul li a {
   color: rgb(240, 206, 170);
   text-shadow: 4px 4px 4px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
     -1px -1px 1px #000;
-  /* margin-left: 10px; */
-  padding: 0 10px;
+  padding: 10px;
 }
 
 li:hover,
@@ -90,6 +80,109 @@ li:focus {
   transition: all 0.3s ease 0s;
 }
 
+
+.uk-overlay {
+  padding: 10px;
+}
+
+/* Settings for icons in nav bar to be in color-scheme */
+i {
+  color: rgb(223, 208, 240);
+}
+
+/* Contact icon settings */
+.icons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+  align-items: center;
+}
+.aboutme {
+  padding-top: 10px;
+}
+
+/* About Me section properties */
+.info {
+  color: rgb(3, 3, 3);
+  background-color: rgba(255, 229, 202, 0.899);
+  border: 3px solid rgb(19, 16, 16);
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 20px;
+  opacity: 0.78;
+  font-size: 25px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin: 0 auto;
+}
+/* Job Title settings */
+.logo {
+  font-size: 40px;
+  padding: 10px;
+  color: rgb(240, 206, 170);
+  text-shadow: 4px 4px 4px black, -1px 1px 2px #000, 1px -1px 1px #000,
+    -1px -1px 1px #000;
+  margin-left: 7%;
+}
+/* sets different style between subheading */
+.subtitle {
+  font-size: 40px;
+  padding: 10px;
+  color: rgb(223, 208, 240);
+  /* color: rgba(136, 213, 145, 0.803); */
+  text-shadow: 4px 4px 4px black, -1px 1px 2px #000, 1px -1px 1px #000,
+    -1px -1px 1px #000;
+}
+
+a {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  -webkit-transform: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -moz-transform: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  transform: 0.3s ease-in-out;
+}
+/* Round edges on headshot */
+.profile-img {
+  border-radius: 20px;
+}
+/* settings to each project image */
+.project-img {
+  border-color: rgb(136, 91, 187);
+  border-style: solid;
+  box-shadow: 5px 5px 5px #212020;
+  max-height: 500px;
+}
+.link-item:hover {
+  /* border-color: rgb(240, 206, 170); */
+  border-color: rgb(223, 208, 240);
+  border-style: solid;
+  transition: all 0.3s ease 0s;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.project-framework {
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.portfolio-item-grid p {
+  font-size: 15px;
+}
+
+footer {
+  position: sticky;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Mobile Responsive */
 @media (min-width: 100px) {
   .nav-list {
     list-style: none;
@@ -118,6 +211,7 @@ li:focus {
     gap: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 10px;
   }
 }
 @media (min-width: 650px) {
@@ -145,11 +239,12 @@ li:focus {
   }
   .portfolio-item-grid {
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: wrap;
+    padding: 10px;
   }
 }
 @media (min-width: 900px) {
@@ -175,9 +270,11 @@ li:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: wrap;
+    padding: 10px;
   }
 }
 
@@ -186,88 +283,4 @@ li:focus {
     float: none;
     display: block;
   }
-}
-
-i {
-  /* color: rgba(136, 213, 145, 0.803); */
-  color: rgb(223, 208, 240);
-  /* border: 3px solid black; */
-}
-.icons-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  max-width: 400px;
-  margin: auto;
-  align-items: center;
-}
-.aboutme {
-  padding-top: 10px;
-}
-
-.info {
-  color: rgb(3, 3, 3);
-  background-color: rgb(255, 229, 202);
-  border: 3px solid rgb(19, 16, 16);
-  border-radius: 5px;
-  padding: 10px;
-  opacity: 0.78;
-  font-size: 30px;
-  white-space: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-.logo {
-  font-size: 40px;
-  padding: 10px;
-  color: rgb(240, 206, 170);
-  text-shadow: 4px 4px 4px black, -1px 1px 2px #000, 1px -1px 1px #000,
-    -1px -1px 1px #000;
-  font-family: "Chau Philomene One", sans-serif;
-  margin-left: 7%;
-}
-.subtitle {
-  font-size: 40px;
-  padding: 10px;
-  color: rgba(136, 213, 145, 0.803);
-  text-shadow: 4px 4px 4px black, -1px 1px 2px #000, 1px -1px 1px #000,
-    -1px -1px 1px #000;
-}
-a {
-  cursor: pointer;
-  -webkit-transition: 0.3s ease-in-out;
-  -webkit-transform: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -moz-transform: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  transform: 0.3s ease-in-out;
-}
-.profile-img {
-  border-radius: 20px;
-}
-
-.project-img {
-  border-color: rgb(136, 91, 187);
-  border-style: solid;
-  box-shadow: 5px 5px 5px #212020;
-  max-height: 500px;
-}
-.link-item:hover {
-  /* border-color: rgb(240, 206, 170); */
-  border-color: rgb(136, 91, 187);
-  border-style: solid;
-  transition: all 0.3s ease 0s;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.project-framework {
-  text-decoration: underline;
-}
-footer {
-  position: sticky;
-  text-align: center;
-  font-size: 2rem;
 }
