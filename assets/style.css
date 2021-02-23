@@ -23,18 +23,28 @@ img {
   width: 100%;
 }
 
+/* .nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: flex-end;
+  font-family: "Chau Philomene One", sans-serif;
+} */
+.nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: right;
+}
+
 .top-nav {
-  width: 100%;
+  /* width: 100%; */
   padding-top: 10px;
-  /* position: fixed; */
   color: rgb(175, 122, 235);
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
-  font-family: "Chau Philomene One", sans-serif;
 }
-.top-nav.open {
-  top: 0;
-  border-radius: initial;
-}
+
 h1 {
   font-size: 95px;
   padding: 10px;
@@ -55,18 +65,13 @@ h2 {
 h3 {
   font-size: 30px;
   font-family: "Chau Philomene One", sans-serif;
+  color: lightgrey;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: rgb(48, 6, 48);
+  text-shadow: 1px 1px 1px rgb(19, 16, 16);
+  font-weight: bold;
 }
-.nav-list {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: "Chau Philomene One", sans-serif;
-}
-li {
-  margin: 0 2rem;
-}
+
 ul li a {
   transition: all 0.3s ease 0s;
   font-size: 30px;
@@ -74,21 +79,23 @@ ul li a {
   color: rgb(240, 206, 170);
   text-shadow: 4px 4px 4px rgb(19, 16, 16), -1px 1px 2px #000, 1px -1px 1px #000,
     -1px -1px 1px #000;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   padding: 0 10px;
-  font-family: "Chau Philomene One", sans-serif;
 }
+
 li:hover,
 li:focus {
-  color: rgb(67, 206, 141);
-  border-color: rgb(17, 53, 37);
   border-style: solid;
-  /* border-bottom: 1px solid; */
   border-radius: 10px;
   transition: all 0.3s ease 0s;
-  font-family: "Chau Philomene One", sans-serif;
 }
+
 @media (min-width: 100px) {
+  .nav-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .details {
     display: grid;
     grid-template-columns: 1fr;
@@ -100,7 +107,6 @@ li:focus {
     grid-template-columns: 1fr;
     grid-gap: 10px;
     padding: 10px;
-    
   }
   .contact-grid {
     display: grid;
@@ -115,6 +121,12 @@ li:focus {
   }
 }
 @media (min-width: 650px) {
+  .nav-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
   .details {
     display: grid;
     grid-template-columns: 4fr 5fr;
@@ -133,7 +145,7 @@ li:focus {
   }
   .portfolio-item-grid {
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: 3fr 3fr;
     gap: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -141,6 +153,12 @@ li:focus {
   }
 }
 @media (min-width: 900px) {
+  .nav-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
   .details {
     display: grid;
     grid-template-columns: 2fr 6fr;
@@ -162,33 +180,30 @@ li:focus {
     white-space: wrap;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+i {
+  /* color: rgba(136, 213, 145, 0.803); */
+  color: rgb(223, 208, 240);
+  /* border: 3px solid black; */
+}
 .icons-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 400px;
   margin: auto;
+  align-items: center;
 }
 .aboutme {
   padding-top: 10px;
 }
-.assignments {
-  display: grid;
-  grid-template-columns: 3fr 3fr;
-  grid-gap: 20px;
-  justify-content: space-evenly;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-  padding-top: 10px;
-  margin: 0 auto;
-}
-.contact {
-  display: grid;
-  grid-template-columns: repeat(4, 0.5fr);
-  grid-gap: 10px;
-  justify-content: space-evenly;
-}
+
 .info {
   color: rgb(3, 3, 3);
   background-color: rgb(255, 229, 202);
@@ -234,21 +249,21 @@ a {
 }
 
 .project-img {
-  border-color: rgb(43, 172, 142);
+  border-color: rgb(136, 91, 187);
   border-style: solid;
   box-shadow: 5px 5px 5px #212020;
   max-height: 500px;
 }
 .link-item:hover {
-  border-color: rgb(240, 206, 170);
+  /* border-color: rgb(240, 206, 170); */
+  border-color: rgb(136, 91, 187);
   border-style: solid;
   transition: all 0.3s ease 0s;
   border-radius: 5px;
   padding: 10px;
 }
 
-
-.project-framework{
+.project-framework {
   text-decoration: underline;
 }
 footer {
